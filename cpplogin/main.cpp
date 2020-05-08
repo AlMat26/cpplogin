@@ -56,17 +56,17 @@ int main()
         {
             cout << "Enter your login:" << endl;
             cin >> login[1];
-        } while (login[1] != login[0]);
 
-        do
-        {
             cout << "Enter your password:" << endl;
             cin >> password[1];
-        } while (password[1] != password[0]);
+        } while (login[1] != login[0] && password[1] != password[0]);
 
-        cout << "Succes login. \nWelcome, " << name << " " << "(" << login[0] << ")" << "!" << endl;
+        if (login[1] == login[0] && password[1] == password[0])
+        {
+            cout << "Succes login. \nWelcome, " << name << " " << "(" << login[0] << ")" << "!" << endl;
+        }
     }
-    cin.get();
+
     system("pause");
     return 0;
 }
