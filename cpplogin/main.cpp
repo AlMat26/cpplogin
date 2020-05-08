@@ -48,6 +48,7 @@ int main()
         file.close();
         return 1;
     }
+
     else if (register_check == "1")
     {
         name = user_name;
@@ -66,6 +67,7 @@ int main()
 
         cout << "Succes login. \nWelcome, " << name << " " << "(" << login[0] << ")" << "!" << endl;
     }
+
     cin.get();
     system("pause");
     return 0;
