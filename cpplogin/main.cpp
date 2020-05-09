@@ -31,7 +31,7 @@ int main()
     system("color 70");
     cout << "Welcome to the simple login programm!" << endl;
 
-    fin.open("userlogininfo.txt");
+    fin.open("userlogininfo.neet");
 
     getline(fin, dataArray[0]); //login
     getline(fin, dataArray[1]); //password
@@ -46,7 +46,7 @@ int main()
 
     if (register_check == "0")
     {
-        file.open("userlogininfo.txt");
+        file.open("userlogininfo.neet");
         cout << "Make a login:" << endl;
         cin >> login[0];
         cout << "Make a password:" << endl;
@@ -79,10 +79,8 @@ int main()
             cin >> password[1];
         } while (login[1] != login[0] && password[1] != password[0]);
 
-        if (login[1] == login[0] && password[1] == password[0])
-        {
-            cout << "Succes login. \nWelcome, " << name << " " << "(" << login[0] << ")" << "!" << endl;
-        }
+        cout << "Succes login. \nWelcome, " << name << " " << "(" << login[0] << ")" << "!" << endl;
+
     }
 
     system("pause");
